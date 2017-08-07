@@ -1,0 +1,66 @@
+<!-- <div class="wrap">
+    <!-- photo负责平移和旋转(平面上xy旋转) -->
+   <!--  <div class="photo photo-center photo-front" onclick="turn(this)">
+      <!-- photo-wrap负责3D翻转(正反面切换) -->
+      <!-- <div class="photo-wrap">   -->
+        <!--  <div class="photo"> -->
+        <!-- <div class="side side-front">
+          <p class="img">
+            <img src="img/6.jpg">
+          </p>
+          <p class="caption">
+            麦兜我和我妈妈
+          </p>
+        </div>
+        <div class="side side-back">
+          <p class="desc">
+            描述信息
+          </p>
+        </div>  
+      </div> 
+    </div>  -->  
+    <!-- </div> -->
+  <!-- </div>  -->
+
+
+<div class="nav">
+	<span class="i"></span>
+</div>
+
+
+// [
+// {
+// 	caption:"麦兜我和我妈妈",
+// 	desc:"导演：谢立文 / 李俊民<br>编剧：谢立文<br>主演：黄磊 / 吴君如 / 张正中 / 黄秋生 / 蔡明丽 / 更多……"
+// 	img:"20.jpg"
+// }
+// ]
+
+
+
+
+<div class="wrap" id="wrap">
+
+    <!-- photo负责平移和旋转(平面上xy旋转) -->
+    <div class="photo photo-front" onclick="turn(this)" id="photo-{{index}}">
+      <!-- photo-wrap负责3D翻转(正反面切换) -->
+
+      <div class="photo-wrap">
+        <!--  <div class="photo"> -->
+        <div class="side side-front">
+          <p class="img">
+            <img src="img/{{img}}">
+          </p>
+          <p class="caption">
+            {{caption}}
+          </p>
+        </div>
+        <div class="side side-back">
+          <p class="desc">
+            {{desc}}
+          </p>
+        </div>
+      </div> 
+    </div>   
+   </div>
+  </div>
